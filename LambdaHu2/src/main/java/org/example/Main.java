@@ -8,9 +8,10 @@ public class Main {
 
 
         HalloJavamitForEach hallo = new HalloJavamitForEach();
+        for (String s:hallo.getList()) {
+            System.out.println(s);
+        }
 
-
-
-
+        hallo.getList().forEach(System.out::println);
     }
 }
